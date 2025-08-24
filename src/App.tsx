@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/todos')
       .then((response) => response.json())
-      .then((json) => {
+      .then((json: ToDo[]) => {
         setTodos(json);
         setLoading(false);
       });

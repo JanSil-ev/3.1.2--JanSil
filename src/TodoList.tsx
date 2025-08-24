@@ -1,6 +1,7 @@
 import { withLoading } from './withLoadingHOC';
 import { ToDo } from './App';
 
+
 type Props = {
   todos: ToDo[];
 };
